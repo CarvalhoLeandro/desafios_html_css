@@ -4,7 +4,8 @@
 
 :root{
     --font-header: 'Raleway';
-    --dark-blue: #33a8db;
+    --dark-blue: #1472b7;
+    --light-blue: #33a8db;
 }
 *{
     margin: 0;
@@ -17,8 +18,6 @@ body{
     width: 100vw;
     height: 100vh;
     background-color: black;
-    
-   
 }
 .banner{
     height: 600px;   
@@ -57,7 +56,7 @@ h1{
     text-transform: uppercase;
     color: transparent;
     letter-spacing: 1.5;
-    background: -webkit-linear-gradient(#33a8db, #1472b7);
+    background: -webkit-linear-gradient(var(--light-blue), var(--dark-blue));
     background-clip: text;
     -webkit-background-clip: text;
 }
@@ -71,7 +70,7 @@ h1{
     margin:16px 0 24px;
 }   
 button{
-   color: #31a8dd;
+   color: var(--light-blue);
    margin: 15px 0 20px;
    font-size: 16px;
    font-weight: bold;
@@ -79,7 +78,7 @@ button{
    text-transform: uppercase;
    letter-spacing: 4px;
    background-color: transparent;
-   border-image: linear-gradient(#3ba1cd, #1572b7) 10 ;
+   border-image: linear-gradient(var(--light-blue), var(--dark-blue)) 10 ;
 }
 
 section{
