@@ -1,0 +1,376 @@
+/* configurar para aceitar  os caracteres com acento */
+@charset "UTF-8";
+
+/* importando fonte externa do google font utilizando @import */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* @font-face importa fonte interna da pasta do projeto */
+@font-face {
+    font-family: "android";/*Nome da fonte que eu dou*/
+    src: url(font/idroid.otf) format('opentype');/*Endereço da pasta e o tipo da fonte*/
+    font-weight: normal;/* Peso da fonte*/
+}
+
+/* As variáveis globais são criadas dentro da pasta raíz do site (root). -> Todas a variáveis em css começa com dois traços.  Dica boa é usar variável para cores e fontes*/
+/* CORES DO SITE 
+#c5ebd6
+#83e1ad
+#3ddc84
+#2fa866
+#1a5c37
+#063d1e
+*/
+:root{
+    /* Variáveis de cor */
+    --cor0: #c5ebd6; 
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+
+    /* Variáveis de fontes */
+    --fonte-padrao: Arial,Verdana,Helvetica,sans-serif;
+    --fonte-destaque: 'Bebas Neue' , 'cursive';
+    --fonte-android: 'android', 'cursive';
+}
+/* Usando o '*' como identificador podemos zerar margens e preenchimento e com isso o site ocupa todo o espaço de tela */
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* Todo o Site */
+body{
+    /* Para usar  variáveis nos estilos Basta digitar 'var' e preencher com a variável desejada*/
+    background-color: var(--cor1);
+    font-family: var(--fonte-padrao);
+  
+}
+
+/* Cabeçalho do site */
+header{
+   
+
+    background-image: linear-gradient( 180deg, var(--cor5), var(--cor1));
+    /* Cor de fundo com degradê do bloco 'header' */
+
+    min-height: 150px;
+    /* O bloco ter altura  menor que 150px */
+
+    text-align: center;
+    /* centralizando o texto no bloco 'header' */
+
+    padding-top: 30px;
+    /* Topo do bloco 'header' preenchido */
+
+  
+   
+}
+
+/* Título do Cabeçalho do site */
+header > h1{
+    color: white;
+    /* Cor da fonte */
+
+    font-family: var(--fonte-destaque);
+    /* Fonte do Título */
+
+    font-size: 3em;
+    /* Tamanho da fonte */
+
+    text-shadow: 1px 1px 1px black;
+    /* Sombra no texto */
+}
+
+/* Parágrafo no cabeçalho do site */
+header > p{
+    color: white;
+    /* Cor da fonte */
+
+    font-family: var(--fonte-padrao);
+    /* Fonte do parágrafo */
+
+    font-size: 1.5em;
+    /* Tamanho da fonte */
+
+    text-shadow: 1px 1px 1px black;
+    /* Sombra no texto */
+
+    margin-top: 30px;
+    /* Margem superior no parágrafo do 'header' */
+    
+    max-width: 500px;
+    /* Largura Máxima do bloco do texto */
+
+    margin: auto;
+    /* Centraliza o bloco de texto */
+
+}
+
+/* Menu de navegação */
+nav{
+    background-color: var(--cor1);
+    /* Cor de fundo do bloco 'nav' */
+
+    margin-bottom: 10px;
+    /* Margem inferior do bloco 'nav' */
+    
+    text-align: center;
+    /* Alinhamento de texto do bloco 'nav'  */
+}
+
+nav a{
+    text-decoration: none;
+    /* Retirado o sublinhado de links */
+
+   padding: 10px;
+    /* Margem lateral dos links */
+    
+    color: var(--cor5);
+    /* Cor de texto dos links */
+
+    border-radius: 8px;
+    /* borda arredondada nos links */
+
+    transition-duration: .5s;
+    /* Duração do tempo de efeito do 'hover' */
+    
+}
+
+
+/* Corpo principal do site */
+main{
+    background-color: white;
+
+    min-width: 455px;
+    /* Quando tiver a Largura mínima de 280px vai adptar o conteúdo */
+   
+    max-width: 750px;
+    /* Quando tiver a largura máxima de 800px vai parar de crescer */
+   
+    margin: auto;
+    /* O conteúdo não vai crescer se a tela for maior que 800px vai ser criado margens laterais e o conteúdo será centralizado na tela */
+   
+    padding: 20px;
+    /* Afasta o conteúdo da borda do bloco 'main' */
+   
+    box-shadow: 0px 0px 10px black;
+    /* Sombra criada */
+   
+    margin-bottom: 20px;
+    /* Margem inferior criada */
+   
+    border-radius: 0px 0px 10px 10px;
+    /* Criado arredondamento inferior   */
+    
+}
+
+/* Título nível 1 do corpo principal */
+main h1{
+    color: var(--cor4);
+    /* Cor da fonte */
+
+    font-family: var(--fonte-android);
+    /* Estilo/tipo de fonte */
+    
+    font-size: 2em;
+    /* Tamanho da fonte */
+    
+    text-align: center;
+    /* Centralizado */
+
+}
+
+/* Título nível 2 do corpo principal */
+main h2{
+    color: var(--cor4);
+    font-family: var(--fonte-android);
+    font-size: 1.5em;
+    text-align: center;
+
+    background-image: radial-gradient(circle at center, var(--cor2), transparent);
+    /* Gradiente radial do centro para as bordas  */
+
+}
+
+/* Imagens do conteúdo principal */
+main img{
+    width: 100%;
+    /* As imagens vão ter a largura de 100% independente do tamanho da tela */
+}
+
+.irina{
+    box-shadow: 2px 2px 5px black;
+    /* Sombra somente na img de 'irina' */
+}
+
+main strong{
+    color: var(--cor5);
+    /* Cor da fonte */
+    
+    padding: 1px;
+    /* preenchimento */
+    
+    font-weight: bolder;
+    /* Negrito */
+
+}
+
+/* Parágrafos do 'article' */
+article p{
+    margin: 15px 0px;
+    /* Margem dos parágrafos */
+
+    text-align: justify;
+    /* Justificando o texto */
+
+    text-indent: 30px;
+    /* Recuo do início de cada parágrafo */
+
+    line-height: 1.2em;
+    /* Altura da distãncia entre linhas */
+
+}
+
+/* Links do 'article' */
+article a{
+    color: var(--cor5);
+    /* Cor da fonte */
+    
+    background-color: var(--cor0);
+    /* Cor de fundo da box */
+
+    text-decoration: none;
+    /* Retirada do sublinhado */
+    
+    font-weight: bold;
+    /* Negrito */
+}
+
+a:hover{
+    color: white;
+    background-color: var(--cor4);
+    /* pseudo classe hover -> Aplica uma ação quando o mouse é passado por cima: nesse caso muda a cor do texto e da box  quando o mouse e passado por cima */
+}
+
+.external::after{
+    content: '\1F517';
+    /* Pseudo elemento de link emoji corrente */
+}
+
+/* Diminuindo a imagem do bugdroid com  a classe criada no html */
+.bugdroid_pq{
+    max-width: 350px;
+    /*A imagem terá 350px de largura em qualquer tela que suporte esse tamanho */
+   
+    display: block;
+    /* 'img' por padrão é inline então para utilizar uma função de block, por exemplo: 'margin' mudamos o display pra 'block' */
+   
+    margin: auto;
+    /* 'auto'centraliza o objeto no centro do bloco */
+}
+
+.video{
+    background-color: white;
+    /* Cor de fundo  */
+    width: 100%;
+    margin: 10px 14px 20px -14px;
+    /* Margem da box do video */
+    padding: 0px;
+    /* preenchimento do vídeo */
+    position: relative;
+    /* O video vai ter a posição em relação da box 'video' */
+    padding-bottom: 55%;
+    /* Regula as faixas laterias do video */
+
+}
+
+.video > iframe{
+    position: absolute; 
+    top: 0%;
+    left: 2.5%;
+    width: 100%;
+    height: 100%;
+}
+
+/* CONTEÚDO PERIFÉRICO */
+aside {
+    background-color: var(--cor1);
+    /* Cor de fundo do conteiner 'aside' */
+
+    padding: 0px 10px 10px 10px;
+    /* Preenchimento do 'aside' */
+   
+    margin-top: 10px;
+    /* Margem superior do 'aside' */
+
+    border-radius: 5px;
+    /* Arredondamento do 'aside' */
+
+    box-shadow: 1px 1px 10px black;
+}
+
+aside > h3{
+    color: white;
+    /* Cor da fonte */
+    
+    background-color: var(--cor4);
+    /* Cor do background da box do 'h3 */
+    
+    margin: -10px -10px 0px -10px;
+    /* Margem negativa faz extraplolar a box e cola na linha da box de fora */
+    padding: 10px;
+    border-radius:5px 5px 0px 0px;
+    text-align: center;
+   
+
+}
+
+/* Listas do 'aside' */
+aside  ul{/*Aplica  a todas 'ul'  de 'aside'*/
+    list-style-type: '\1F4F1\00A0';
+    /* Para usar emojis como marcadores de lista basta copiar o código no site e colar no 'style type entre 'aspas' e contabarra no início.
+    
+    \00A0 -> Código do emoji para dar espaço*/
+    
+    
+    
+    list-style-position: inside;
+    /* Por padrão os marcadores de lista ficam fora da box, usamos o 'position' para colocar pra dentro */
+
+    columns: 2;
+    /* Divide a lista na quantidade de colunas que desejar */
+}
+
+/* Rodapé do site */
+footer{
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+    padding: 20px;
+ 
+}
+
+footer a{/*Todo link que tiver dentro de footer...*/
+    color: var(--cor1);
+    text-decoration: none;
+    padding: 5px;
+    transition-duration: .5s;
+}
+footer a:hover{
+    color: white;
+    border-radius: 5px;
+
+}
+
+
+
+
+
+
+
+
+/* Um bom site quando é criado ele passa por um planejamento para ser executado da melhor forma, pensando nisso devemos planejar o layout do site, as cores e as fontes. O site mockflow é uma ferramenta boa para planejar a estrutura do site. 
+
+Responsividade: Limita o tamanho máximo e mínimo de exibição do site. Configurando o tamanho máximo o site deve abrir margens laterais para não destorcer os conteúdos do site e configurando o tamanho mínimo o site deve quebrar textos, imagens e etc para caber todo o conteúdo dentro da tela.  */
