@@ -36,12 +36,9 @@ body{
     margin: 0 auto;
 }
 .logo{
-    width: 228px;
-    height: 228px;  
+    width: 260px;
     margin: 0 auto;
-    padding-right: 15px;
-   
-    background-color: rgba(0, 0, 0, 0.266);
+    background-color: rgba(0, 0, 0, 0.110);
     border-radius: 50%;
 }
 h1{
