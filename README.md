@@ -9,7 +9,7 @@
 <br>
 <a href="https://carvalholeandro.github.io/desafios_html_css/heart_trial_animation/index.html">Heart Trial Animation</a> 
 <br>
-<a href="https://carvalholeandro.github.io/desafios_html_css/opala/index.html">Opala</a>
+<a href="https://carvalholeandro.github.io/desafios_html_css/projeto_opala/index.html">Projeto Opala</a>
 <br>
 <a href="https://carvalholeandro.github.io/desafios_html_css/landing_page_dio/index.html">Landing Page DIO</a>
  
