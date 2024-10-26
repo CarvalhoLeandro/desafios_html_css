@@ -3,7 +3,7 @@
 
 <a>Projeto Android</a>
 <br>
-<a href="https://carvalholeandro.github.io/desafios_html_css/>Projeto Cordel</a>
+<a href="https://carvalholeandro.github.io/desafios_html_css/projeto_cordel/index.html">Projeto Cordel</a>
 <br>
 <a href="https://carvalholeandro.github.io/desafios_html_css/projeto_rede_social/index.html">Projeto Social</a> 
 <br>
